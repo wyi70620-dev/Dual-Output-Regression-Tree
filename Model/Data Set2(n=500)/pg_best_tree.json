@@ -1,0 +1,1416 @@
+{
+  "type": "split",
+  "depth": 0,
+  "n_samples": 400,
+  "loss": 748.59532,
+  "feature_index": 0,
+  "feature_name": "Cat1",
+  "threshold": 1.0,
+  "left": {
+    "type": "split",
+    "depth": 1,
+    "n_samples": 198,
+    "loss": -722.177798,
+    "feature_index": 1,
+    "feature_name": "Cat2",
+    "threshold": -2.0,
+    "left": {
+      "type": "split",
+      "depth": 2,
+      "n_samples": 61,
+      "loss": -623.257011,
+      "feature_index": 2,
+      "feature_name": "Cat3",
+      "threshold": 1.0,
+      "left": {
+        "type": "split",
+        "depth": 3,
+        "n_samples": 34,
+        "loss": -447.159133,
+        "feature_index": 5,
+        "feature_name": "Con2",
+        "threshold": 1.275606,
+        "left": {
+          "type": "split",
+          "depth": 4,
+          "n_samples": 33,
+          "loss": -448.0977,
+          "feature_index": 4,
+          "feature_name": "Con1",
+          "threshold": -0.08572,
+          "left": {
+            "type": "split",
+            "depth": 5,
+            "n_samples": 17,
+            "loss": 81846.977193,
+            "feature_index": 2,
+            "feature_name": "Cat3",
+            "threshold": -2.5,
+            "left": {
+              "type": "leaf",
+              "depth": 6,
+              "n_samples": 1,
+              "loss": 82082.294057,
+              "params": {
+                "lambda": 0.0,
+                "alpha": 9999.9997,
+                "gamma": 0.0
+              },
+              "pred": {
+                "N_pred": 0.0,
+                "S_pred": 0.0,
+                "Y_pred": 0.0
+              }
+            },
+            "right": {
+              "type": "split",
+              "depth": 6,
+              "n_samples": 16,
+              "loss": 81862.431401,
+              "feature_index": 4,
+              "feature_name": "Con1",
+              "threshold": -1.491859,
+              "left": {
+                "type": "leaf",
+                "depth": 7,
+                "n_samples": 1,
+                "loss": 82082.294057,
+                "params": {
+                  "lambda": 0.0,
+                  "alpha": 9999.9997,
+                  "gamma": 0.0
+                },
+                "pred": {
+                  "N_pred": 0.0,
+                  "S_pred": 0.0,
+                  "Y_pred": 0.0
+                }
+              },
+              "right": {
+                "type": "split",
+                "depth": 7,
+                "n_samples": 15,
+                "loss": 81877.87025,
+                "feature_index": 4,
+                "feature_name": "Con1",
+                "threshold": -1.472829,
+                "left": {
+                  "type": "leaf",
+                  "depth": 8,
+                  "n_samples": 1,
+                  "loss": 82082.294057,
+                  "params": {
+                    "lambda": 0.0,
+                    "alpha": 9999.9997,
+                    "gamma": 0.0
+                  },
+                  "pred": {
+                    "N_pred": 0.0,
+                    "S_pred": 0.0,
+                    "Y_pred": 0.0
+                  }
+                },
+                "right": {
+                  "type": "leaf",
+                  "depth": 8,
+                  "n_samples": 14,
+                  "loss": -204.423807,
+                  "params": {
+                    "lambda": 0.071429,
+                    "alpha": 0.158039,
+                    "gamma": 1.4e-05
+                  },
+                  "pred": {
+                    "N_pred": 0.071429,
+                    "S_pred": 2e-06,
+                    "Y_pred": 0.0
+                  }
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "split",
+            "depth": 5,
+            "n_samples": 16,
+            "loss": -205.342604,
+            "feature_index": 5,
+            "feature_name": "Con2",
+            "threshold": 0.908937,
+            "left": {
+              "type": "split",
+              "depth": 6,
+              "n_samples": 15,
+              "loss": -204.936179,
+              "feature_index": 4,
+              "feature_name": "Con1",
+              "threshold": -0.047842,
+              "left": {
+                "type": "leaf",
+                "depth": 7,
+                "n_samples": 1,
+                "loss": -9.507206,
+                "params": {
+                  "lambda": 1.0,
+                  "alpha": 9999.9997,
+                  "gamma": 0.0
+                },
+                "pred": {
+                  "N_pred": 1.0,
+                  "S_pred": 0.001091,
+                  "Y_pred": 0.001091
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "depth": 7,
+                "n_samples": 14,
+                "loss": -195.428974,
+                "params": {
+                  "lambda": 0.071429,
+                  "alpha": 0.101326,
+                  "gamma": 0.000668
+                },
+                "pred": {
+                  "N_pred": 0.071429,
+                  "S_pred": 6.8e-05,
+                  "Y_pred": 5e-06
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "depth": 6,
+              "n_samples": 1,
+              "loss": -8.833269,
+              "params": {
+                "lambda": 1.0,
+                "alpha": 9999.9997,
+                "gamma": 0.0
+              },
+              "pred": {
+                "N_pred": 1.0,
+                "S_pred": 0.00214,
+                "Y_pred": 0.00214
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "depth": 4,
+          "n_samples": 1,
+          "loss": -7.182983,
+          "params": {
+            "lambda": 1.0,
+            "alpha": 9999.9997,
+            "gamma": 1e-06
+          },
+          "pred": {
+            "N_pred": 1.0,
+            "S_pred": 0.011145,
+            "Y_pred": 0.011145
+          }
+        }
+      },
+      "right": {
+        "type": "split",
+        "depth": 3,
+        "n_samples": 27,
+        "loss": -194.32153,
+        "feature_index": 4,
+        "feature_name": "Con1",
+        "threshold": 1.793473,
+        "left": {
+          "type": "split",
+          "depth": 4,
+          "n_samples": 26,
+          "loss": -194.969301,
+          "feature_index": 3,
+          "feature_name": "Cat4",
+          "threshold": -0.5,
+          "left": {
+            "type": "leaf",
+            "depth": 5,
+            "n_samples": 1,
+            "loss": -7.799655,
+            "params": {
+              "lambda": 1.0,
+              "alpha": 9999.9997,
+              "gamma": 1e-06
+            },
+            "pred": {
+              "N_pred": 1.0,
+              "S_pred": 0.006015,
+              "Y_pred": 0.006015
+            }
+          },
+          "right": {
+            "type": "split",
+            "depth": 5,
+            "n_samples": 25,
+            "loss": -198.068603,
+            "feature_index": 6,
+            "feature_name": "Con3",
+            "threshold": 1.826942,
+            "left": {
+              "type": "split",
+              "depth": 6,
+              "n_samples": 24,
+              "loss": -200.049681,
+              "feature_index": 7,
+              "feature_name": "Con4",
+              "threshold": -0.518232,
+              "left": {
+                "type": "leaf",
+                "depth": 7,
+                "n_samples": 7,
+                "loss": -86.305823,
+                "params": {
+                  "lambda": 0.142857,
+                  "alpha": 0.079792,
+                  "gamma": 0.034459
+                },
+                "pred": {
+                  "N_pred": 0.142857,
+                  "S_pred": 0.00275,
+                  "Y_pred": 0.000393
+                }
+              },
+              "right": {
+                "type": "split",
+                "depth": 7,
+                "n_samples": 17,
+                "loss": -123.898591,
+                "feature_index": 4,
+                "feature_name": "Con1",
+                "threshold": 0.894559,
+                "left": {
+                  "type": "leaf",
+                  "depth": 8,
+                  "n_samples": 16,
+                  "loss": -121.059795,
+                  "params": {
+                    "lambda": 0.625,
+                    "alpha": 0.085815,
+                    "gamma": 0.924152
+                  },
+                  "pred": {
+                    "N_pred": 0.625,
+                    "S_pred": 0.079306,
+                    "Y_pred": 0.049566
+                  }
+                },
+                "right": {
+                  "type": "leaf",
+                  "depth": 8,
+                  "n_samples": 1,
+                  "loss": -2.838796,
+                  "params": {
+                    "lambda": 4.0,
+                    "alpha": 9999.9997,
+                    "gamma": 4.6e-05
+                  },
+                  "pred": {
+                    "N_pred": 4.0,
+                    "S_pred": 0.455915,
+                    "Y_pred": 1.823659
+                  }
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "depth": 6,
+              "n_samples": 1,
+              "loss": -1.875592,
+              "params": {
+                "lambda": 4.0,
+                "alpha": 9999.9997,
+                "gamma": 0.000119
+              },
+              "pred": {
+                "N_pred": 4.0,
+                "S_pred": 1.194532,
+                "Y_pred": 4.778128
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "depth": 4,
+          "n_samples": 1,
+          "loss": -5.979086,
+          "params": {
+            "lambda": 2.0,
+            "alpha": 9999.9997,
+            "gamma": 3e-06
+          },
+          "pred": {
+            "N_pred": 2.0,
+            "S_pred": 0.027331,
+            "Y_pred": 0.054663
+          }
+        }
+      }
+    },
+    "right": {
+      "type": "split",
+      "depth": 2,
+      "n_samples": 137,
+      "loss": -149.527987,
+      "feature_index": 3,
+      "feature_name": "Cat4",
+      "threshold": 1.0,
+      "left": {
+        "type": "split",
+        "depth": 3,
+        "n_samples": 78,
+        "loss": -309.877877,
+        "feature_index": 2,
+        "feature_name": "Cat3",
+        "threshold": -2.0,
+        "left": {
+          "type": "split",
+          "depth": 4,
+          "n_samples": 24,
+          "loss": -237.133417,
+          "feature_index": 7,
+          "feature_name": "Con4",
+          "threshold": 0.345718,
+          "left": {
+            "type": "leaf",
+            "depth": 5,
+            "n_samples": 14,
+            "loss": -96.561412,
+            "params": {
+              "lambda": 0.714286,
+              "alpha": 0.103318,
+              "gamma": 0.281439
+            },
+            "pred": {
+              "N_pred": 0.714286,
+              "S_pred": 0.029078,
+              "Y_pred": 0.02077
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "depth": 5,
+            "n_samples": 10,
+            "loss": -140.572006,
+            "params": {
+              "lambda": 0.1,
+              "alpha": 0.134082,
+              "gamma": 6.2e-05
+            },
+            "pred": {
+              "N_pred": 0.1,
+              "S_pred": 8e-06,
+              "Y_pred": 1e-06
+            }
+          }
+        },
+        "right": {
+          "type": "split",
+          "depth": 4,
+          "n_samples": 54,
+          "loss": -95.533242,
+          "feature_index": 5,
+          "feature_name": "Con2",
+          "threshold": 1.033989,
+          "left": {
+            "type": "split",
+            "depth": 5,
+            "n_samples": 40,
+            "loss": -138.341176,
+            "feature_index": 4,
+            "feature_name": "Con1",
+            "threshold": 1.091959,
+            "left": {
+              "type": "split",
+              "depth": 6,
+              "n_samples": 35,
+              "loss": -155.731074,
+              "feature_index": 7,
+              "feature_name": "Con4",
+              "threshold": -2.052771,
+              "left": {
+                "type": "leaf",
+                "depth": 7,
+                "n_samples": 1,
+                "loss": -8.710071,
+                "params": {
+                  "lambda": 1.0,
+                  "alpha": 9999.9997,
+                  "gamma": 0.0
+                },
+                "pred": {
+                  "N_pred": 1.0,
+                  "S_pred": 0.00242,
+                  "Y_pred": 0.00242
+                }
+              },
+              "right": {
+                "type": "split",
+                "depth": 7,
+                "n_samples": 34,
+                "loss": -153.686242,
+                "feature_index": 6,
+                "feature_name": "Con3",
+                "threshold": -1.680053,
+                "left": {
+                  "type": "leaf",
+                  "depth": 8,
+                  "n_samples": 1,
+                  "loss": -4.462442,
+                  "params": {
+                    "lambda": 2.0,
+                    "alpha": 9999.9997,
+                    "gamma": 1.2e-05
+                  },
+                  "pred": {
+                    "N_pred": 2.0,
+                    "S_pred": 0.124547,
+                    "Y_pred": 0.249094
+                  }
+                },
+                "right": {
+                  "type": "leaf",
+                  "depth": 8,
+                  "n_samples": 33,
+                  "loss": -149.223799,
+                  "params": {
+                    "lambda": 1.030303,
+                    "alpha": 0.097521,
+                    "gamma": 3.849906
+                  },
+                  "pred": {
+                    "N_pred": 1.030303,
+                    "S_pred": 0.375447,
+                    "Y_pred": 0.386824
+                  }
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "depth": 6,
+              "n_samples": 5,
+              "loss": 10.720104,
+              "params": {
+                "lambda": 2.6,
+                "alpha": 3.158209,
+                "gamma": 0.300068
+              },
+              "pred": {
+                "N_pred": 2.6,
+                "S_pred": 0.947677,
+                "Y_pred": 2.463961
+              }
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "depth": 5,
+            "n_samples": 14,
+            "loss": 30.958434,
+            "params": {
+              "lambda": 3.142857,
+              "alpha": 0.192756,
+              "gamma": 13.132168
+            },
+            "pred": {
+              "N_pred": 3.142857,
+              "S_pred": 2.531298,
+              "Y_pred": 7.955507
+            }
+          }
+        }
+      },
+      "right": {
+        "type": "split",
+        "depth": 3,
+        "n_samples": 59,
+        "loss": 123.041673,
+        "feature_index": 0,
+        "feature_name": "Cat1",
+        "threshold": -2.0,
+        "left": {
+          "type": "split",
+          "depth": 4,
+          "n_samples": 37,
+          "loss": -5.557316,
+          "feature_index": 5,
+          "feature_name": "Con2",
+          "threshold": 1.288982,
+          "left": {
+            "type": "split",
+            "depth": 5,
+            "n_samples": 29,
+            "loss": -55.082514,
+            "feature_index": 4,
+            "feature_name": "Con1",
+            "threshold": 1.188439,
+            "left": {
+              "type": "split",
+              "depth": 6,
+              "n_samples": 28,
+              "loss": -60.932248,
+              "feature_index": 4,
+              "feature_name": "Con1",
+              "threshold": 1.100945,
+              "left": {
+                "type": "split",
+                "depth": 7,
+                "n_samples": 27,
+                "loss": -62.576307,
+                "feature_index": 4,
+                "feature_name": "Con1",
+                "threshold": 0.916552,
+                "left": {
+                  "type": "leaf",
+                  "depth": 8,
+                  "n_samples": 25,
+                  "loss": -59.605831,
+                  "params": {
+                    "lambda": 1.4,
+                    "alpha": 0.123689,
+                    "gamma": 3.492142
+                  },
+                  "pred": {
+                    "N_pred": 1.4,
+                    "S_pred": 0.431939,
+                    "Y_pred": 0.604715
+                  }
+                },
+                "right": {
+                  "type": "leaf",
+                  "depth": 8,
+                  "n_samples": 2,
+                  "loss": -2.970476,
+                  "params": {
+                    "lambda": 3.0,
+                    "alpha": 650.812838,
+                    "gamma": 0.000481
+                  },
+                  "pred": {
+                    "N_pred": 3.0,
+                    "S_pred": 0.313337,
+                    "Y_pred": 0.940011
+                  }
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "depth": 7,
+                "n_samples": 1,
+                "loss": -8.019947,
+                "params": {
+                  "lambda": 1.0,
+                  "alpha": 9999.9997,
+                  "gamma": 0.0
+                },
+                "pred": {
+                  "N_pred": 1.0,
+                  "S_pred": 0.004826,
+                  "Y_pred": 0.004826
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "depth": 6,
+              "n_samples": 1,
+              "loss": -0.750506,
+              "params": {
+                "lambda": 2.0,
+                "alpha": 9999.9997,
+                "gamma": 0.00051
+              },
+              "pred": {
+                "N_pred": 2.0,
+                "S_pred": 5.09808,
+                "Y_pred": 10.19616
+              }
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "depth": 5,
+            "n_samples": 8,
+            "loss": 42.458734,
+            "params": {
+              "lambda": 4.625,
+              "alpha": 0.627366,
+              "gamma": 12.042536
+            },
+            "pred": {
+              "N_pred": 4.625,
+              "S_pred": 7.555073,
+              "Y_pred": 34.942214
+            }
+          }
+        },
+        "right": {
+          "type": "split",
+          "depth": 4,
+          "n_samples": 22,
+          "loss": 96.448915,
+          "feature_index": 4,
+          "feature_name": "Con1",
+          "threshold": -1.518152,
+          "left": {
+            "type": "leaf",
+            "depth": 5,
+            "n_samples": 3,
+            "loss": -4.494265,
+            "params": {
+              "lambda": 1.0,
+              "alpha": 0.32486,
+              "gamma": 0.189837
+            },
+            "pred": {
+              "N_pred": 1.0,
+              "S_pred": 0.06167,
+              "Y_pred": 0.06167
+            }
+          },
+          "right": {
+            "type": "split",
+            "depth": 5,
+            "n_samples": 19,
+            "loss": 91.482433,
+            "feature_index": 6,
+            "feature_name": "Con3",
+            "threshold": 1.964076,
+            "left": {
+              "type": "split",
+              "depth": 6,
+              "n_samples": 18,
+              "loss": 82.47813,
+              "feature_index": 2,
+              "feature_name": "Cat3",
+              "threshold": 1.0,
+              "left": {
+                "type": "leaf",
+                "depth": 7,
+                "n_samples": 6,
+                "loss": 18.937231,
+                "params": {
+                  "lambda": 2.666667,
+                  "alpha": 0.535706,
+                  "gamma": 3.88652
+                },
+                "pred": {
+                  "N_pred": 2.666667,
+                  "S_pred": 2.082031,
+                  "Y_pred": 5.552084
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "depth": 7,
+                "n_samples": 12,
+                "loss": 63.540899,
+                "params": {
+                  "lambda": 5.25,
+                  "alpha": 1.590535,
+                  "gamma": 4.691374
+                },
+                "pred": {
+                  "N_pred": 5.25,
+                  "S_pred": 7.461795,
+                  "Y_pred": 39.174422
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "depth": 6,
+              "n_samples": 1,
+              "loss": 1.718034,
+              "params": {
+                "lambda": 11.0,
+                "alpha": 9999.9997,
+                "gamma": 0.002654
+              },
+              "pred": {
+                "N_pred": 11.0,
+                "S_pred": 26.543833,
+                "Y_pred": 291.982164
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "right": {
+    "type": "split",
+    "depth": 1,
+    "n_samples": 202,
+    "loss": 1141.980105,
+    "feature_index": 1,
+    "feature_name": "Cat2",
+    "threshold": -2.0,
+    "left": {
+      "type": "split",
+      "depth": 2,
+      "n_samples": 61,
+      "loss": -161.851675,
+      "feature_index": 4,
+      "feature_name": "Con1",
+      "threshold": 0.140702,
+      "left": {
+        "type": "split",
+        "depth": 3,
+        "n_samples": 37,
+        "loss": -227.589976,
+        "feature_index": 5,
+        "feature_name": "Con2",
+        "threshold": 1.800592,
+        "left": {
+          "type": "split",
+          "depth": 4,
+          "n_samples": 36,
+          "loss": -232.835816,
+          "feature_index": 7,
+          "feature_name": "Con4",
+          "threshold": 1.436865,
+          "left": {
+            "type": "split",
+            "depth": 5,
+            "n_samples": 35,
+            "loss": -236.4931,
+            "feature_index": 3,
+            "feature_name": "Cat4",
+            "threshold": 1.0,
+            "left": {
+              "type": "leaf",
+              "depth": 6,
+              "n_samples": 12,
+              "loss": -146.945167,
+              "params": {
+                "lambda": 0.25,
+                "alpha": 0.083304,
+                "gamma": 0.018119
+              },
+              "pred": {
+                "N_pred": 0.25,
+                "S_pred": 0.001509,
+                "Y_pred": 0.000377
+              }
+            },
+            "right": {
+              "type": "split",
+              "depth": 6,
+              "n_samples": 23,
+              "loss": -96.734569,
+              "feature_index": 6,
+              "feature_name": "Con3",
+              "threshold": 1.110553,
+              "left": {
+                "type": "split",
+                "depth": 7,
+                "n_samples": 22,
+                "loss": -102.023846,
+                "feature_index": 4,
+                "feature_name": "Con1",
+                "threshold": -0.001614,
+                "left": {
+                  "type": "leaf",
+                  "depth": 8,
+                  "n_samples": 20,
+                  "loss": -103.763298,
+                  "params": {
+                    "lambda": 0.7,
+                    "alpha": 0.104703,
+                    "gamma": 1.451987
+                  },
+                  "pred": {
+                    "N_pred": 0.7,
+                    "S_pred": 0.152028,
+                    "Y_pred": 0.106419
+                  }
+                },
+                "right": {
+                  "type": "leaf",
+                  "depth": 8,
+                  "n_samples": 2,
+                  "loss": 1.739453,
+                  "params": {
+                    "lambda": 2.5,
+                    "alpha": 11.967278,
+                    "gamma": 0.040212
+                  },
+                  "pred": {
+                    "N_pred": 2.5,
+                    "S_pred": 0.48123,
+                    "Y_pred": 1.203076
+                  }
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "depth": 7,
+                "n_samples": 1,
+                "loss": -1.91972,
+                "params": {
+                  "lambda": 2.0,
+                  "alpha": 9999.9997,
+                  "gamma": 0.000158
+                },
+                "pred": {
+                  "N_pred": 2.0,
+                  "S_pred": 1.583521,
+                  "Y_pred": 3.167042
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "depth": 5,
+            "n_samples": 1,
+            "loss": -4.089892,
+            "params": {
+              "lambda": 2.0,
+              "alpha": 9999.9997,
+              "gamma": 1.8e-05
+            },
+            "pred": {
+              "N_pred": 2.0,
+              "S_pred": 0.180772,
+              "Y_pred": 0.361543
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "depth": 4,
+          "n_samples": 1,
+          "loss": -1.906718,
+          "params": {
+            "lambda": 2.0,
+            "alpha": 9999.9997,
+            "gamma": 0.00016
+          },
+          "pred": {
+            "N_pred": 2.0,
+            "S_pred": 1.604244,
+            "Y_pred": 3.208487
+          }
+        }
+      },
+      "right": {
+        "type": "split",
+        "depth": 3,
+        "n_samples": 24,
+        "loss": 48.366279,
+        "feature_index": 2,
+        "feature_name": "Cat3",
+        "threshold": 1.0,
+        "left": {
+          "type": "leaf",
+          "depth": 4,
+          "n_samples": 9,
+          "loss": -8.189241,
+          "params": {
+            "lambda": 1.444444,
+            "alpha": 0.194076,
+            "gamma": 1.305137
+          },
+          "pred": {
+            "N_pred": 1.444444,
+            "S_pred": 0.253295,
+            "Y_pred": 0.365871
+          }
+        },
+        "right": {
+          "type": "split",
+          "depth": 4,
+          "n_samples": 15,
+          "loss": 48.423259,
+          "feature_index": 7,
+          "feature_name": "Con4",
+          "threshold": 1.253915,
+          "left": {
+            "type": "leaf",
+            "depth": 5,
+            "n_samples": 14,
+            "loss": 54.405325,
+            "params": {
+              "lambda": 3.285714,
+              "alpha": 0.729995,
+              "gamma": 3.525213
+            },
+            "pred": {
+              "N_pred": 3.285714,
+              "S_pred": 2.573388,
+              "Y_pred": 8.455417
+            }
+          },
+          "right": {
+            "type": "leaf",
+            "depth": 5,
+            "n_samples": 1,
+            "loss": -5.982066,
+            "params": {
+              "lambda": 1.0,
+              "alpha": 9999.9997,
+              "gamma": 4e-06
+            },
+            "pred": {
+              "N_pred": 1.0,
+              "S_pred": 0.037037,
+              "Y_pred": 0.037037
+            }
+          }
+        }
+      }
+    },
+    "right": {
+      "type": "split",
+      "depth": 2,
+      "n_samples": 141,
+      "loss": 1183.834798,
+      "feature_index": 4,
+      "feature_name": "Con1",
+      "threshold": 0.399508,
+      "left": {
+        "type": "split",
+        "depth": 3,
+        "n_samples": 94,
+        "loss": 612.746687,
+        "feature_index": 3,
+        "feature_name": "Cat4",
+        "threshold": 1.0,
+        "left": {
+          "type": "split",
+          "depth": 4,
+          "n_samples": 49,
+          "loss": 237.3084,
+          "feature_index": 2,
+          "feature_name": "Cat3",
+          "threshold": 1.0,
+          "left": {
+            "type": "split",
+            "depth": 5,
+            "n_samples": 26,
+            "loss": 73.306035,
+            "feature_index": 7,
+            "feature_name": "Con4",
+            "threshold": -0.779328,
+            "left": {
+              "type": "leaf",
+              "depth": 6,
+              "n_samples": 2,
+              "loss": 0.831081,
+              "params": {
+                "lambda": 3.5,
+                "alpha": 1167.989127,
+                "gamma": 0.000969
+              },
+              "pred": {
+                "N_pred": 3.5,
+                "S_pred": 1.131395,
+                "Y_pred": 3.959883
+              }
+            },
+            "right": {
+              "type": "split",
+              "depth": 6,
+              "n_samples": 24,
+              "loss": 64.339202,
+              "feature_index": 7,
+              "feature_name": "Con4",
+              "threshold": 1.306742,
+              "left": {
+                "type": "split",
+                "depth": 7,
+                "n_samples": 23,
+                "loss": 56.385924,
+                "feature_index": 2,
+                "feature_name": "Cat3",
+                "threshold": -2.0,
+                "left": {
+                  "type": "leaf",
+                  "depth": 8,
+                  "n_samples": 10,
+                  "loss": 0.019893,
+                  "params": {
+                    "lambda": 2.1,
+                    "alpha": 0.136292,
+                    "gamma": 13.767445
+                  },
+                  "pred": {
+                    "N_pred": 2.1,
+                    "S_pred": 1.876387,
+                    "Y_pred": 3.940412
+                  }
+                },
+                "right": {
+                  "type": "leaf",
+                  "depth": 8,
+                  "n_samples": 13,
+                  "loss": 56.366031,
+                  "params": {
+                    "lambda": 4.076923,
+                    "alpha": 0.484182,
+                    "gamma": 8.55613
+                  },
+                  "pred": {
+                    "N_pred": 4.076923,
+                    "S_pred": 4.142723,
+                    "Y_pred": 16.889563
+                  }
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "depth": 7,
+                "n_samples": 1,
+                "loss": 0.360126,
+                "params": {
+                  "lambda": 8.0,
+                  "alpha": 9999.9997,
+                  "gamma": 0.000798
+                },
+                "pred": {
+                  "N_pred": 8.0,
+                  "S_pred": 7.982716,
+                  "Y_pred": 63.861728
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "split",
+            "depth": 5,
+            "n_samples": 23,
+            "loss": 141.147444,
+            "feature_index": 5,
+            "feature_name": "Con2",
+            "threshold": 0.11286,
+            "left": {
+              "type": "leaf",
+              "depth": 6,
+              "n_samples": 12,
+              "loss": 59.565575,
+              "params": {
+                "lambda": 4.083333,
+                "alpha": 0.672916,
+                "gamma": 8.265574
+              },
+              "pred": {
+                "N_pred": 4.083333,
+                "S_pred": 5.562035,
+                "Y_pred": 22.711642
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "depth": 6,
+              "n_samples": 11,
+              "loss": 81.581869,
+              "params": {
+                "lambda": 8.363636,
+                "alpha": 1.28623,
+                "gamma": 22.06673
+              },
+              "pred": {
+                "N_pred": 8.363636,
+                "S_pred": 28.382898,
+                "Y_pred": 237.38424
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "split",
+          "depth": 4,
+          "n_samples": 45,
+          "loss": 323.741569,
+          "feature_index": 5,
+          "feature_name": "Con2",
+          "threshold": -0.209713,
+          "left": {
+            "type": "split",
+            "depth": 5,
+            "n_samples": 25,
+            "loss": 133.354387,
+            "feature_index": 7,
+            "feature_name": "Con4",
+            "threshold": 1.939235,
+            "left": {
+              "type": "split",
+              "depth": 6,
+              "n_samples": 24,
+              "loss": 120.816284,
+              "feature_index": 7,
+              "feature_name": "Con4",
+              "threshold": 1.15848,
+              "left": {
+                "type": "split",
+                "depth": 7,
+                "n_samples": 22,
+                "loss": 108.276658,
+                "feature_index": 4,
+                "feature_name": "Con1",
+                "threshold": -2.452317,
+                "left": {
+                  "type": "leaf",
+                  "depth": 8,
+                  "n_samples": 1,
+                  "loss": -2.491997,
+                  "params": {
+                    "lambda": 1.0,
+                    "alpha": 9999.9997,
+                    "gamma": 0.000121
+                  },
+                  "pred": {
+                    "N_pred": 1.0,
+                    "S_pred": 1.214372,
+                    "Y_pred": 1.214372
+                  }
+                },
+                "right": {
+                  "type": "leaf",
+                  "depth": 8,
+                  "n_samples": 21,
+                  "loss": 110.768654,
+                  "params": {
+                    "lambda": 4.904762,
+                    "alpha": 0.738714,
+                    "gamma": 11.69432
+                  },
+                  "pred": {
+                    "N_pred": 4.904762,
+                    "S_pred": 8.63876,
+                    "Y_pred": 42.371062
+                  }
+                }
+              },
+              "right": {
+                "type": "leaf",
+                "depth": 7,
+                "n_samples": 2,
+                "loss": 4.631808,
+                "params": {
+                  "lambda": 9.5,
+                  "alpha": 1201.710048,
+                  "gamma": 0.008966
+                },
+                "pred": {
+                  "N_pred": 9.5,
+                  "S_pred": 10.774103,
+                  "Y_pred": 102.353982
+                }
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "depth": 6,
+              "n_samples": 1,
+              "loss": 2.580965,
+              "params": {
+                "lambda": 12.0,
+                "alpha": 9999.9997,
+                "gamma": 0.006027
+              },
+              "pred": {
+                "N_pred": 12.0,
+                "S_pred": 60.271158,
+                "Y_pred": 723.2539
+              }
+            }
+          },
+          "right": {
+            "type": "split",
+            "depth": 5,
+            "n_samples": 20,
+            "loss": 163.672889,
+            "feature_index": 6,
+            "feature_name": "Con3",
+            "threshold": 0.148325,
+            "left": {
+              "type": "leaf",
+              "depth": 6,
+              "n_samples": 11,
+              "loss": 80.487479,
+              "params": {
+                "lambda": 7.909091,
+                "alpha": 0.876567,
+                "gamma": 29.623146
+              },
+              "pred": {
+                "N_pred": 7.909091,
+                "S_pred": 25.966659,
+                "Y_pred": 205.372666
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "depth": 6,
+              "n_samples": 9,
+              "loss": 83.18541,
+              "params": {
+                "lambda": 14.111111,
+                "alpha": 1.323231,
+                "gamma": 142.837362
+              },
+              "pred": {
+                "N_pred": 14.111111,
+                "S_pred": 189.006897,
+                "Y_pred": 2667.09732
+              }
+            }
+          }
+        }
+      },
+      "right": {
+        "type": "split",
+        "depth": 3,
+        "n_samples": 47,
+        "loss": 495.970161,
+        "feature_index": 3,
+        "feature_name": "Cat4",
+        "threshold": -2.0,
+        "left": {
+          "type": "leaf",
+          "depth": 4,
+          "n_samples": 11,
+          "loss": 72.293374,
+          "params": {
+            "lambda": 5.272727,
+            "alpha": 0.676874,
+            "gamma": 28.024608
+          },
+          "pred": {
+            "N_pred": 5.272727,
+            "S_pred": 18.969129,
+            "Y_pred": 100.019044
+          }
+        },
+        "right": {
+          "type": "split",
+          "depth": 4,
+          "n_samples": 36,
+          "loss": 383.128703,
+          "feature_index": 1,
+          "feature_name": "Cat2",
+          "threshold": 1.0,
+          "left": {
+            "type": "leaf",
+            "depth": 5,
+            "n_samples": 10,
+            "loss": 73.573935,
+            "params": {
+              "lambda": 7.4,
+              "alpha": 0.317347,
+              "gamma": 109.346659
+            },
+            "pred": {
+              "N_pred": 7.4,
+              "S_pred": 34.700842,
+              "Y_pred": 256.786234
+            }
+          },
+          "right": {
+            "type": "split",
+            "depth": 5,
+            "n_samples": 26,
+            "loss": 273.587788,
+            "feature_index": 2,
+            "feature_name": "Cat3",
+            "threshold": -3.0,
+            "left": {
+              "type": "leaf",
+              "depth": 6,
+              "n_samples": 4,
+              "loss": 20.316586,
+              "params": {
+                "lambda": 6.0,
+                "alpha": 19.307126,
+                "gamma": 1.027618
+              },
+              "pred": {
+                "N_pred": 6.0,
+                "S_pred": 19.840344,
+                "Y_pred": 119.042064
+              }
+            },
+            "right": {
+              "type": "split",
+              "depth": 6,
+              "n_samples": 22,
+              "loss": 223.784975,
+              "feature_index": 7,
+              "feature_name": "Con4",
+              "threshold": -0.948079,
+              "left": {
+                "type": "leaf",
+                "depth": 7,
+                "n_samples": 7,
+                "loss": 59.544179,
+                "params": {
+                  "lambda": 11.857143,
+                  "alpha": 1.952487,
+                  "gamma": 30.222854
+                },
+                "pred": {
+                  "N_pred": 11.857143,
+                  "S_pred": 59.009726,
+                  "Y_pred": 699.686751
+                }
+              },
+              "right": {
+                "type": "split",
+                "depth": 7,
+                "n_samples": 15,
+                "loss": 146.268551,
+                "feature_index": 3,
+                "feature_name": "Cat4",
+                "threshold": 1.0,
+                "left": {
+                  "type": "leaf",
+                  "depth": 8,
+                  "n_samples": 3,
+                  "loss": 21.691132,
+                  "params": {
+                    "lambda": 13.666667,
+                    "alpha": 23.919213,
+                    "gamma": 3.775445
+                  },
+                  "pred": {
+                    "N_pred": 13.666667,
+                    "S_pred": 90.30567,
+                    "Y_pred": 1234.177495
+                  }
+                },
+                "right": {
+                  "type": "leaf",
+                  "depth": 8,
+                  "n_samples": 12,
+                  "loss": 124.577418,
+                  "params": {
+                    "lambda": 27.5,
+                    "alpha": 4.071914,
+                    "gamma": 92.465504
+                  },
+                  "pred": {
+                    "N_pred": 27.5,
+                    "S_pred": 376.511536,
+                    "Y_pred": 10354.067245
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

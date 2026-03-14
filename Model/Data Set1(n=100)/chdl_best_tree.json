@@ -1,0 +1,151 @@
+{
+  "type": "split",
+  "depth": 0,
+  "n_samples": 100,
+  "loss": 197474.640006,
+  "feature_index": 7,
+  "feature_name": "V8",
+  "threshold": 2.202588,
+  "left": {
+    "type": "split",
+    "depth": 1,
+    "n_samples": 97,
+    "loss": 8617.282304,
+    "feature_index": 9,
+    "feature_name": "V10",
+    "threshold": 1.57523,
+    "left": {
+      "type": "split",
+      "depth": 2,
+      "n_samples": 93,
+      "loss": 2264.501213,
+      "feature_index": 6,
+      "feature_name": "V7",
+      "threshold": 2.061658,
+      "left": {
+        "type": "split",
+        "depth": 3,
+        "n_samples": 91,
+        "loss": 467.250456,
+        "feature_index": 6,
+        "feature_name": "V7",
+        "threshold": 1.983927,
+        "left": {
+          "type": "split",
+          "depth": 4,
+          "n_samples": 88,
+          "loss": 376.946944,
+          "feature_index": 0,
+          "feature_name": "V1",
+          "threshold": 1.0,
+          "left": {
+            "type": "split",
+            "depth": 5,
+            "n_samples": 48,
+            "loss": 21.40669,
+            "feature_index": 1,
+            "feature_name": "V2",
+            "threshold": 1.0,
+            "left": {
+              "type": "leaf",
+              "depth": 6,
+              "n_samples": 23,
+              "loss": 0.0,
+              "value": {
+                "N_pred": 0.0,
+                "S_pred": 0.0,
+                "Y_pred": 0.0
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "depth": 6,
+              "n_samples": 25,
+              "loss": 21.40669,
+              "value": {
+                "N_pred": 1.464236,
+                "S_pred": 0.245019,
+                "Y_pred": 0.358765
+              }
+            }
+          },
+          "right": {
+            "type": "split",
+            "depth": 5,
+            "n_samples": 40,
+            "loss": 266.546488,
+            "feature_index": 1,
+            "feature_name": "V2",
+            "threshold": 1.0,
+            "left": {
+              "type": "leaf",
+              "depth": 6,
+              "n_samples": 21,
+              "loss": 18.733903,
+              "value": {
+                "N_pred": 1.637301,
+                "S_pred": 0.268637,
+                "Y_pred": 0.439839
+              }
+            },
+            "right": {
+              "type": "leaf",
+              "depth": 6,
+              "n_samples": 19,
+              "loss": 247.812585,
+              "value": {
+                "N_pred": 3.412737,
+                "S_pred": 3.887998,
+                "Y_pred": 13.268715
+              }
+            }
+          }
+        },
+        "right": {
+          "type": "leaf",
+          "depth": 4,
+          "n_samples": 3,
+          "loss": 52.211131,
+          "value": {
+            "N_pred": 2.185409,
+            "S_pred": 8.918189,
+            "Y_pred": 19.489894
+          }
+        }
+      },
+      "right": {
+        "type": "leaf",
+        "depth": 3,
+        "n_samples": 2,
+        "loss": 1705.686697,
+        "value": {
+          "N_pred": 2.236067,
+          "S_pred": 44.91224,
+          "Y_pred": 100.426776
+        }
+      }
+    },
+    "right": {
+      "type": "leaf",
+      "depth": 2,
+      "n_samples": 4,
+      "loss": 4486.112742,
+      "value": {
+        "N_pred": 13.421556,
+        "S_pred": 44.13601,
+        "Y_pred": 592.373942
+      }
+    }
+  },
+  "right": {
+    "type": "leaf",
+    "depth": 1,
+    "n_samples": 3,
+    "loss": 185480.470974,
+    "value": {
+      "N_pred": 23.923114,
+      "S_pred": 499.686422,
+      "Y_pred": 11954.055333
+    }
+  }
+}

@@ -1,0 +1,130 @@
+# ===========================
+# 数据生成器
+# ===========================
+suppressPackageStartupMessages({
+  library(MASS)
+  library(tweedie)
+})
+
+
+GenerateData_NS <- function (nSample, nRealCatX, nFakeCatX, nRealConX, nFakeConX, pho,
+                             phi = 2, power = 1.7, target_mean = 500, seed = 999) {
+  set.seed(seed)
+
+  n  <- nSample
+  p1 <- nRealConX + nFakeConX
+  p2 <- nRealCatX + nFakeCatX
+
+  # --- ConX ---
+  if (p1 > 0) {
+    Cov  <- outer(1:p1, 1:p1, function(x, y) pho^abs(x - y))
+    xCon <- MASS::mvrnorm(n, rep(0, p1), Cov)
+  } else {
+    xCon <- matrix(nrow = n, ncol = 0)
+  }
+
+  # --- CatX ---
+  if (p2 > 0) {
+    xCat <- NULL
+    for (i in 1:p2) {
+      xCat <- cbind(xCat, sample(c(-3, -2, 1, 4), size = n, replace = TRUE,
+                                 prob = c(0.1, 0.2, 0.2, 0.5)))
+    }
+  } else {
+    xCat <- matrix(nrow = n, ncol = 0)
+  }
+
+  # --- linear predictor ---
+  halfRc <- round(nRealConX / 2)
+  rc_idx1 <- if (nRealConX >= 1) 1:halfRc else integer(0)
+  rc_idx2 <- if (nRealConX >= 1) (halfRc + 1):nRealConX else integer(0)
+
+  halfCc <- round(nRealCatX / 2)
+  cc_idx1 <- if (nRealCatX >= 1) 1:halfCc else integer(0)
+  cc_idx2 <- if (nRealCatX >= 1) (halfCc + 1):nRealCatX else integer(0)
+
+  eta <- -0.1
+  if (length(rc_idx1)) eta <- eta + 1.0 * rowSums(as.matrix(xCon[, rc_idx1, drop = FALSE]))
+  if (length(rc_idx2)) eta <- eta + 0.5 * rowSums(as.matrix(xCon[, rc_idx2, drop = FALSE]))
+  if (length(cc_idx1)) eta <- eta + 1.0 * rowSums(as.matrix(xCat[, cc_idx1, drop = FALSE]))
+  if (length(cc_idx2)) eta <- eta + 0.5 * rowSums(as.matrix(xCat[, cc_idx2, drop = FALSE]))
+
+  mu <- exp(eta)
+  muTrue <- target_mean * mu / mean(mu)
+
+  # --- Poisson-Gamma parameters ---
+  p <- power
+  a <- (2 - p) / (p - 1)
+  lambda <- muTrue^(2 - p) / (phi * (2 - p))
+  b_scale <- phi * (p - 1) * muTrue^(p - 1)
+  N <- rpois(n, lambda)
+  Y <- numeric(n)
+  pos <- which(N > 0)
+  if (length(pos)) {
+    Y[pos] <- rgamma(length(pos), shape = a * N[pos], scale = b_scale[pos])
+  }
+  S <- ifelse(N > 0, Y / N, 0)
+
+  # --- Data construction ---
+  dataOut <- as.data.frame(cbind(xCat, xCon))
+  if (p2 > 0) {
+    dataOut[, 1:p2] <- lapply(dataOut[, 1:p2, drop = FALSE], factor)
+    colnames(dataOut)[1:p2] <- paste0("Cat", seq_len(p2))
+  }
+  if (p1 > 0) {
+    colnames(dataOut)[(p2 + 1):(p2 + p1)] <- paste0("Con", seq_len(p1))
+  }
+  dataOut$N <- N
+  dataOut$S <- S
+
+  return(list(
+    data   = dataOut,
+    mu     = mu,
+    muTrue = muTrue,
+    Y      = Y,
+    power  = power,
+    phi    = phi
+  ))
+}
+
+# ===========================
+# 生成 Train 数据（seed = 999）
+# ===========================
+SM_train <- GenerateData_NS(
+  nSample = 100,
+  nRealCatX = 4, nFakeCatX = 1,
+  nRealConX = 4, nFakeConX = 1,
+  pho = 0.8,
+  phi = 2, power = 1.7, target_mean = 500,
+  seed = 999
+)
+
+SMdata_train <- SM_train$data
+
+# 保存 RDS
+saveRDS(SM_train, file = "~/Desktop/SM_train_NS.rds")
+saveRDS(SMdata_train, file = "~/Desktop/SMdata_train_NS.rds")
+
+# ===========================
+# 生成 Test 数据（seed = 77）
+# ===========================
+SM_test <- GenerateData_NS(
+  nSample = 100,
+  nRealCatX = 4, nFakeCatX = 1,
+  nRealConX = 4, nFakeConX = 1,
+  pho = 0.8,
+  phi = 2, power = 1.7, target_mean = 500,
+  seed = 77
+)
+
+SMdata_test <- SM_test$data
+
+# 保存 RDS
+saveRDS(SM_test, file = "~/Desktop/SM_test_NS.rds")
+saveRDS(SMdata_test, file = "~/Desktop/SMdata_test_NS.rds")
+
+# ===========================
+# 保存为.csv文件
+# ===========================
+x <- readRDS("~/Desktop/SMdata_train_NS.rds")
+write.csv(x, file = "~/Desktop/SMdata_train_NS.csv", row.names = FALSE)
